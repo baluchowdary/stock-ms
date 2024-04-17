@@ -42,7 +42,7 @@ public class StockController {
 	
 	@KafkaListener(topics = NEW_PAYMENTS_TOPIC, groupId = NEW_PAYMENTS_GROUP)
 	public void updateStock(String paymentEvent) throws JsonMappingException, JsonProcessingException {
-		System.out.println("Inside update inventory for order "+paymentEvent);
+		//System.out.println("Inside update inventory for order "+paymentEvent);
 		
 		log.info("updateStock -- method start");
 		
